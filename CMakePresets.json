@@ -1,0 +1,23 @@
+{
+  "version": 3,
+  "configurePresets": [
+    {
+      "name": "default",
+      "binaryDir": "${sourceDir}/build-x86_64",
+      "toolchainFile": "${sourceDir}/toolchain.x86_64.cmake",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug"
+      }
+    },
+    {
+      "name": "x86_64",
+      "binaryDir": "${sourceDir}/build-x86_64",
+      "toolchainFile": "${sourceDir}/toolchain.x86_64.cmake"
+    },
+    {
+      "name": "aarch64",
+      "binaryDir": "${sourceDir}/build-aarch64",
+      "toolchainFile": "${sourceDir}/toolchain.aarch64.cmake"
+    }
+  ]
+}
