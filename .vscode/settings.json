@@ -2,6 +2,9 @@
   "[dockerfile]": {
     "editor.defaultFormatter": "ms-azuretools.vscode-docker"
   },
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "files.exclude": {
@@ -12,5 +15,6 @@
   },
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
-  "cmake.useCMakePresets": "always"
+  "cmake.useCMakePresets": "always",
+  "C_Cpp.autoAddFileAssociations": false
 }
