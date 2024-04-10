@@ -8,7 +8,7 @@
     {
       "name": "x86_64",
       "binaryDir": "${sourceDir}/build-x86_64",
-      "toolchainFile": "${sourceDir}/toolchain.x86_64.cmake",
+      "toolchainFile": "${sourceDir}/cmake/toolchain.x86_64.cmake",
       "cacheVariables": {
         "CMAKE_BUILD_TYPE": "Debug"
       }
@@ -16,7 +16,7 @@
     {
       "name": "x86_64-release",
       "binaryDir": "${sourceDir}/build-x86_64-release",
-      "toolchainFile": "${sourceDir}/toolchain.x86_64.cmake",
+      "toolchainFile": "${sourceDir}/cmake/toolchain.x86_64.cmake",
       "cacheVariables": {
         "CMAKE_BUILD_TYPE": "MinSizeRel"
       }
@@ -24,7 +24,7 @@
     {
       "name": "aarch64",
       "binaryDir": "${sourceDir}/build-aarch64",
-      "toolchainFile": "${sourceDir}/toolchain.aarch64.cmake",
+      "toolchainFile": "${sourceDir}/cmake/toolchain.aarch64.cmake",
       "cacheVariables": {
         "CMAKE_BUILD_TYPE": "Debug"
       }
@@ -32,7 +32,7 @@
     {
       "name": "aarch64-release",
       "binaryDir": "${sourceDir}/build-aarch64-release",
-      "toolchainFile": "${sourceDir}/toolchain.aarch64.cmake",
+      "toolchainFile": "${sourceDir}/cmake/toolchain.aarch64.cmake",
       "cacheVariables": {
         "CMAKE_BUILD_TYPE": "MinSizeRel"
       }
