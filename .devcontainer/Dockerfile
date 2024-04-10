@@ -22,11 +22,11 @@ RUN \
   # - x86_64 glibc
   curl -L ${BOOTLIN_TOOLCHAINS_URL}/x86-64/tarballs/x86-64--glibc--stable-${BOOTLIN_TOOLCHAINS_VERSION}.tar.bz2 -o /tmp/toolchain.bz2 && \
   tar -xvjf /tmp/toolchain.bz2 -C /toolchains && \
-  mv /toolchains/x86-64--glibc--stable-2024.02-1 /toolchains/x86_64-glibc && \
+  mv /toolchains/x86-64--glibc--stable-${BOOTLIN_TOOLCHAINS_VERSION} /toolchains/x86_64-glibc && \
   # - aarch64 glibc
   curl -L ${BOOTLIN_TOOLCHAINS_URL}/aarch64/tarballs/aarch64--glibc--stable-${BOOTLIN_TOOLCHAINS_VERSION}.tar.bz2 -o /tmp/toolchain.bz2 && \
   tar -xvjf /tmp/toolchain.bz2 -C /toolchains && \
-  mv /toolchains/aarch64--glibc--stable-2024.02-1 /toolchains/aarch64-glibc && \
+  mv /toolchains/aarch64--glibc--stable-${BOOTLIN_TOOLCHAINS_VERSION} /toolchains/aarch64-glibc && \
   # Add non-root user
   groupadd --gid $USER_GID $USER && \
   useradd -s /bin/bash --uid $USER_UID --gid $USER -m $USER --create-home && \
